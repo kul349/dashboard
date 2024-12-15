@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Bootstrap for Styling -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-beta2/css/bootstrap.min.css" integrity="sha384-pzjw8f+ua7Kw1TIqPQE07e62cGM1U7xDo5qFtB7L7EVnMF96BOhMRcM88+oL+Jqx" crossorigin="anonymous">
+  
+  <style>
+    /* Styling for Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #4CAF50; /* Green background */
+      color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .header .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .header .nav {
+      display: flex;
+      gap: 20px;
+    }
+    .header .nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 1em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s;
+    }
+    .header .nav a:hover {
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <!-- Dashboard Name -->
+    <div class="logo">Dashboard</div>
+    
+    <!-- Navigation Links -->
+    <nav class="nav">
+      <a href="/home"><i class="fas fa-home"></i> Home</a>
+      <a href="/add-user"><i class="fas fa-user-plus"></i> Add User</a>
+      <a href="/about"><i class="fas fa-info-circle"></i> About</a>
+      <a href="/contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+  </header>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-beta2/js/bootstrap.bundle.min.js" integrity="sha512-43iShtbiyImxjjU4a9rhXBy7eKtIsrpll8xKhe1ghKqh5NyfME8phZs5JRFZpRBe1si44WM3tNmnqMym7JRmDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
